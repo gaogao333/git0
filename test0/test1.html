@@ -28,6 +28,9 @@
         <li><a href="#top7">embed标签音视频</a></li>
         <li><a href="#top8">audio标签加载音频html5用</a></li>
         <li><a href="#top9">video标签加载视频html5用</a></li>
+        <li><a href="#top10">列表</a></li>
+        <li><a href="#top11">表格</a></li>
+        <li><a href="#top12">表单</a></li>
         <li>
             <a href="D:\web\web\web1\fxj.html" target="_blank">转到范的主页</a>
         </li>
@@ -37,7 +40,7 @@
         <br /><br /><br />
         <li>
             <a href="https://github.com/gaogao333" target="_blank">
-                <img src="../image1/githubhead.png" title="远程仓库，点击进入"></a>
+                <img src="../image1/github.png" title="远程仓库，点击进入"></a>
         </li>
 
     </ul>
@@ -61,7 +64,7 @@
     <h3><a name="top4">img标签加载图片</a><a href="#top">(返回目录)</a></h3>
 
     <p>
-        <img src="../image1/a9f36c33371bfe25b588c47b193654a.jpg" alt=" 本图不能加载时显示的文字" title="范晓娟">
+        <img src="../image1/juan7.jpg" alt=" 本图不能加载时显示的文字" title="范晓娟">
         <h3><a>img标签加载图片</a><a href="#top">(返回目录)</a></h3>
         <img src="http://ztd00.photos.bdimg.com/ztd/w=700;q=50/sign=d2e5bbeef2edab6474724fc0c70ddefe/a044ad345982b2b7a648fce138adcbef77099bc4.jpg" alt=" 本图不能加载时显示的文字" title="美女">
     </p>
@@ -85,8 +88,9 @@
     <h3><a name="top9">video标签加载视频html5用</a><a href="#top">(返回目录)</a>
     </h3>
     <video height="550" width="1300" controls="controls">
-            <source src="../video/son.mp4" type="video/mp4" />
+            <source src="../video/son1.mp4" type="video/mp4" />
         </video>
+
     <!-- 1.img标签支持的图片格式：jpg,png,gif
          2.title属性是鼠标放置在图片上时显示的文字。 
          3.图片加载路径： a，互联网路径 b.本机上绝对路径带磁盘符的路径，不推荐
@@ -97,6 +101,133 @@
          1.audio 标签中加入窗口尺寸属性不起作用
          2.本地仓库代码里不能有超过100M的文件，否则本地仓库无法同步到 github
     -->
+    <!--列表和表格-->
+    <h3>
+        <a name="top10">
+            <--无序列表-->
+        </a><a href="#top">(返回目录)</a></h3>
+    <h4>一线城市</h4>
+    <hr />
+    <ul>
+        <li>北京</li>
+        <li>上海</li>
+        <li>广州</li>
+        <li>深圳</li>
+        <li>成都</li>
+        <li>杭州</li>
+    </ul>
+
+    <h3>
+        <--有序列表-->
+    </h3>
+    <h4>一线城市成绩单</h4>
+    <hr />
+    <ol>
+        <li>北京</li>
+        <li>上海</li>
+        <li>广州</li>
+        <li>深圳</li>
+        <li>成都</li>
+        <li>杭州</li>
+    </ol>
+    <h3>
+        <a>
+                ======自定义列表======
+            </a>
+        <a href="#top">(返回目录)</a>
+    </h3>
+    <hr>
+    <dl>
+        <dt>背阴坡大学</dt>
+        <dd>背阴坡大学是背阴坡人小薰设想创建的私人综合性大学。 分为： 1.研究型学院 2.应用型学院 3.技术工人 主要由高士公司资助，也接受社会捐款。主要学科有理科，工科如材料科学、热加工、机械加工、自动控制等等。
+        </dd>
+    </dl>
+    <h3>
+        <a name="top11">
+            <--表格-->
+        </a>
+        <a href="#top">(返回目录)</a>
+    </h3>
+    <hr>
+    <table border="1px">
+        <caption>背阴坡大学学院结构</caption>
+        <thead>
+            <tr>
+                <th>理科</th>
+                <th>工科</th>
+                <th>技术</th>
+                <th>社科</th>
+                <th>商科</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>物理</td>
+                <td>材料科学</td>
+                <td>焊接</td>
+                <td>财务</td>
+                <td>投资</td>
+            </tr>
+            <tr>
+                <td>化学</td>
+                <td>机械加工</td>
+                <td>激光切割</td>
+                <td>工商管理</td>
+                <td>跨国贸易</td>
+            </tr>
+            <tr>
+                <td>生物</td>
+                <td>自动控制</td>
+                <td>机器人维修</td>
+                <td>企业制度与流程</td>
+                <td>期货</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>
+        <a name="top12">
+            <--表单-->
+        </a>
+        <a href="#top">(返回目录)</a>
+
+    </h3>
+    <hr>
+    <form method="POST" action="">
+        <label>用户名：</label>
+        <input type="text" name="username" size="20"><br>
+        <label>密码：</label>
+        <input type="password" name="password" size="20"><br>
+        <label>邮箱：</label>
+        <input type="email" name="email" size="30"><br>
+        <label>性别：</label>
+        <input type="radio" name="gender" value="1" checked>男
+        <input type="radio" name="gender" value="2">女
+        <br>
+        <label>爱好：</label>
+        <input type="checkbox" name="hobby" value="">看书
+        <input type="checkbox" name="hobby" value="">旅游
+        <input type="checkbox" name="hobby" value="">写作
+        <input type="checkbox" name="hobby" value="">编程
+        <input type="checkbox" name="hobby" value="">写日记
+        <input type="checkbox" name="hobby" value="">跑步
+        <input type="checkbox" name="hobby" value="">游泳
+        <br><br><br>
+        <label>横置表单：</label>
+        <textarea name="" id="" cols="30" rows="10">
+
+        </textarea>
+        <br>
+        <label>预选项：</label>
+        <select>
+            <option>北京</option>
+            <option>上海</option>
+            <option>郑州</option>
+            <option>登封</option>
+            <option>背阴坡</option>
+        </select>
+        <br>
+        <input type="submit" value="提交">
+    </form>
 </body>
 
 </html>
