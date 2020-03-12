@@ -1,10 +1,20 @@
-p {
-    width: 200px;
-    height: 100px;
-    margin: 40px auto;
+div {
+    width: 100%;
+    height: 450px;
+    /* margin: 40px auto; */
     background-color: lightblue;
     color: navy;
     font-size: 20px;
-    padding: 18px;
+    /* padding: 18px; */
     border-radius: 12px;
+    border: 3px solid green;
+}
+
+div>ul>li {
+    list-style-type: square;
+}
+
+div>ol>li {
+    list-style-position: outside;
+    border: 1px solid navy;
 }
