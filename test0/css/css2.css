@@ -93,10 +93,32 @@ div>.p0 {
     font-size: 50px;
 }
 
+div>.p0:hover {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div>.p0:hover::before {
+    content: "【";
+    color: red;
+}
+
+div>.p0:hover::after {
+    content: "】";
+    color: red;
+}
+
 #dp1>.p1 {
     letter-spacing: 10px;
     text-align: justify;
     text-transform: capitalize;
+}
+
+#dp1>.p1::first-letter {
+    font-weight: bold;
+    font: size 30px;
+    color: green;
 }
 
 div>.p2 {
@@ -135,3 +157,32 @@ div>.p6>img {
     /* vertical-align: top; */
     float: left;
 }
+
+a {
+    color: lightblue;
+}
+
+a[target] {
+    color: navy;
+}
+
+.weilei01 {
+    width: 180px;
+    height: 50px;
+    background-color: yellow;
+    margin: auto;
+    line-height: 50px;
+    text-align: center;
+    color: navy;
+    font-size: 25px;
+}
+
+.weilei01:hover {
+    background-color: lightgreen;
+    color: lime;
+    font-weight: bold;
+}
+
+
+/* table>thead>tr{} 
+*/
