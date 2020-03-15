@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+div>ul>li {
+    list-style: none;
+}
+
+#top {
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    color: navy;
+    text-align: center;
+}
+
+#top>ul>li>a {
+    color: navy;
+}
+
+#top>ul>li>a:hover {
+    color: red;
+    font-size: 20px;
+}
+
+.d01 {
+    width: 533px;
+    height: 300px;
+    border: solid navy 5px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.d02 {
+    width: 500px;
+    height: 200px;
+    background-color: lightblue;
+    color: navy;
+    font-size: 25px;
+    line-height: 200px;
+    text-align: center;
+    border: solid navy 5px;
+    border-bottom: green solid 5px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.d03 {
+    width: 500px;
+    height: 333px;
+    background-color: lightblue;
+    border: solid navy 5px;
+    border-bottom: green solid 5px;
+    padding: 30px;
+    margin: 40px auto;
+}
+
+.row {
+    width: 1120px;
+    height: 433px;
+    background-color: lightblue;
+    /* padding: 30px; */
+    margin: 50px auto;
+}
+
+.row>div {
+    width: 500px;
+    height: 333px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.pailie {
+    width: 1200px;
+    height: 399px;
+    background-color: lightblue;
+    margin: auto;
+}
+
+.pailie>.demo1 {
+    /* width: 274px;
+    height: 239px;
+    background-color: lightblue; */
+    margin-top: 65px;
+    margin-left: 34.666666666px;
+    float: left;
+}
+
+.pailie>.demo1:first-child {
+    margin-left: 0px;
+}
+
+.pailie>.demo1>.img {
+    width: 274px;
+    height: 239px;
+}
+
+.pailie>.demo1>.title {
+    width: 274px;
+    height: 30px;
+    font-size: 18px;
+    color: blue;
+    text-align: center;
+    line-height: 30px;
+    background-color: lightgreen;
+    /* border: red 2px solid; */
+}
+
+.pailie>.demo1>.title:hover {
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: yellow;
+}
