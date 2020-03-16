@@ -1,4 +1,10 @@
-body {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* body {
     margin: 0px;
     padding: 0px;
 }
@@ -6,27 +12,49 @@ body {
 ul {
     margin: 0px;
     padding: 0px;
-}
+} */
 
-div>ul>li {
+#top>ul>li {
     list-style: none;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 #top {
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: lightblue;
-    color: navy;
-    text-align: center;
 }
 
+
+/* #top>ul>li {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+} */
+
 #top>ul>li>a {
-    color: navy;
+    color: green;
+    font-size: 16px;
 }
 
 #top>ul>li>a:hover {
     color: red;
     font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* #top>ul>li:hover {
+    background-color: teal;
+} */
+
+h3 {
+    background-color: lightgreen;
+    text-align: center;
+    color: blue;
 }
 
 .d01 {
@@ -110,7 +138,8 @@ div>ul>li {
     text-align: center;
     line-height: 30px;
     background-color: lightgreen;
-    /* border: red 2px solid; */
+    box-sizing: border-box;
+    border: red 2px solid;
 }
 
 .pailie>.demo1>.title:hover {
