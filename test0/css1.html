@@ -53,20 +53,20 @@
             <li>杭州</li>
         </ol>
     </div>
-    <br /><br /><br />
+    <br />
     <h3><a name="top2">css定位</a><a href="#top">(返回目录)</a></h3>
     <ol>
         <li>定位--static=========默认，自动，纵向流式定位。</li>
         <li>float样式清除========通常用法是：把设置浮动的容器放在纵向流容器里/把设置横向的容器嵌套在有大小尺寸的纵向容器里，父容器作为背景层主要显示子层，称之为多层叠加样式CSS。只要父容器设置尺寸就好。会脱离纵向流,另一层飘在这。没有占用纵向流的位置，不占用应该的位置，只是飘在应该的位置，接下来的元素会放在这，并与float的元素位置重叠，float后加一定数量的br会把接下来的元素纵向流排在下面。也可以， 在放置float的容器的父容器::after{ content: "";
             display: block; clear: both;}执行这样的操作清除float即可。</li>
-        <li>定位--abusolute</li>
-        <li>定位--relative</li>
-        <li>定位--fixed</li>
-        <li>Z-index属性</li>
+        <li>定位--abusolute=====相对父容器左上角。如果父容器时static类型， 直接忽略，继续往上 找父容器,直到body为止。在父容器里 添加属性position: relative;定位从父容器左上角开始，否则 容易从body左上角开始。他是脱离流的。即他不会空出流位置。下面的元素紧挨着他往下排。
+        </li>
+        <li>定位--relative======相对正常位置本来的位置的偏移量,被移容器{ position: relative; top: 130px; left: 130px; }，不脱离流，即他下一个元素或容器按照他本来的位置继续往下排，他原来的位置会空出来。
+        </li>
+        <li>定位--fixed=========固定到页面那个位置。滚动时跟着滚动，一直在显示页面的固定位置。</li>
+        <li>Z-index属性=========谁的值大显示谁。不想让显示的值小一些，可为负数。有多层重叠时应用。</li>
     </ol>
     <div class="top2-1">
-        <div class="top2-11"></div>
-        <div class="top2-11"></div>
         <div class="top2-11"></div>
     </div>
     <h3>第二行</h3>
@@ -79,12 +79,24 @@
     <div class="top2-2">
         <div class="top2-21"></div>
         <div class="top2-21"></div>
-        <div class="top2-21"></div>
     </div>
-    <h3><a name="top3">章节3</a><a href="#top">(返回目录)</a></h3>
+    <div class="top2-3">
+        <div class=" top2-31 "><img src="../image1/logobaizitouming300.png "></div>
+        <div class="top2-32 "><img src="../image1/logobaidiheizi300.png "></div>
+        <img src="../image1/LOGO66-100shangxibi0.5baizitouming255-100png.png">
+        <div class="top2-33 ">新闻信息1新闻信息2新闻信息3新闻信息4</div>
+    </div>
+
+    <div class="top2-4"></div>
+    <div class="top2-4"></div>
+    <div class="top2-4"></div>
+    <div class="top2-5">
+        <img src="../image1/logobaidiheizi300.png ">
+    </div>
+    <h3><a name="top3 ">章节3</a><a href="#top ">(返回目录)</a></h3>
     <div></div>
     <br /><br /><br />
-    <h3><a name="top4">章节4</a><a href="#top">(返回目录)</a></h3>
+    <h3><a name="top4 ">章节4</a><a href="#top ">(返回目录)</a></h3>
     <div></div>
 </body>
 

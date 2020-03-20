@@ -3,9 +3,13 @@
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .top1 {
     width: 100%;
-    height: 450px;
+    height: 350px;
     /* margin: 40px auto; */
     background-color: lightblue;
     color: navy;
@@ -24,27 +28,45 @@
     border: 1px solid navy;
 }
 
+
+/* float及float样式清除 */
+
 .top2-1 {
-    /* width: 100%; */
+    /* text-align: center;
+    line-height: 120px;
+   对 div 不起作用 
+   要居中用margin-auto*/
     width: 550px;
-    height: 250px;
+    height: 120px;
     background-color: lightblue;
     margin-bottom: 10px;
+    margin: auto;
+    /*body中第一层div即本div居中*/
 }
 
 .top2-1>.top2-11 {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: navy;
-    margin: 10px;
-    float: left;
+    margin-top: 10px;
+    margin: 30px auto;
+    /* margin: auto;只是本div在父div中
+    横向居中，纵向顶置。且margin的其他参数
+    失效。对于float好几个同名div时
+     margin: auto;不起作用。纵向时可用
+     且margin的其他参数也可用
+     就是在所有父容器里纵向居中
+     */
+    /* line-height: 100px;对div不起作用 */
+    /* float: left; */
 }
 
 .top2-1>.top2-12 {
     width: 100px;
     height: 100px;
     background-color: green;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 60px;
     float: left;
 }
 
@@ -57,14 +79,120 @@
 }
 
 .top2-2::after {
+    /* h3 {
+    /* clear: left;
+    clear: right; 
+    clear: both;
+}也行 */
     content: "";
     display: block;
     clear: both;
 }
 
 
-/* h3 {
-    /* clear: left;
-    clear: right; 
-    clear: both;
-} */
+/* absolute定位 */
+
+.top2-3 {
+    width: 1200px;
+    height: 340px;
+    background-color: rgb(0, 0, 128, .6);
+    margin: 100px auto;
+    position: relative;
+}
+
+
+/*.top2-3>.top2-31 {
+    如果父容器时static类型，
+    直接忽略，继续往上 找父容器。
+    
+    位置起点是对于body 与img一起时，
+    谁的值大top执行谁的,left执行
+    top2-3>.top2-31 其他的被屏蔽
+    position: absolute;
+    top: 70px;
+    left: 70%;
+}*/
+
+.top2-3>.top2-31>img {
+    /*
+    如果父容器时static类型，
+    直接忽略，继续往上 找父容器。
+    
+    位置起点是对于body ,
+     与.top2-3>.top2-31top一起作用时
+    谁的值大top执行谁的
+    left执行top2-3>.top2-31即
+    执行父级的设置 其他的被屏蔽*/
+    position: absolute;
+    top: 95px;
+    left: 520px;
+}
+
+.top2-3>.top2-32>img {
+    /* 
+    如果父容器时static类型，
+    直接忽略，继续往上 找父容器。
+    位置起点是对于body */
+    position: absolute;
+    top: 95px;
+    left: 860px;
+    z-index: -1;
+}
+
+.top2-3>img {
+    /* 如果父容器时static类型，
+    直接忽略，继续往上 找父容器。
+    
+    位置起点是对于body ,
+    与.top2-3>.top2-31top一起作用时
+    谁的值大top执行谁的
+    left执行top2-3>.top2-31 
+    其他的被屏蔽*/
+    position: absolute;
+    top: 120px;
+    left: 230px;
+    z-index: -1;
+}
+
+.top2-3>.top2-33 {
+    /* 如果父容器时static类型，
+    直接忽略，继续往上 找父容器。 */
+    width: 200px;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: orchid;
+    color: blue;
+    font-size: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* relative定位 */
+
+.top2-4 {
+    width: 100px;
+    height: 100px;
+    background-color: orchid;
+    margin: 30px;
+    /* position: relative; */
+}
+
+.top2-4:nth-child(2) {
+    /* 不起作用！为什么？ */
+    position: relative;
+    top: 130px;
+    left: 130px;
+}
+
+
+/*       fixed定位 */
+
+.top2-5>img {
+    position: fixed;
+    right: 5px;
+    top: 20px;
+}
